@@ -356,6 +356,7 @@ screen main_menu():
 
     add gui.main_menu_background
 
+
     ## Эта пустая рамка затеняет главное меню.
     frame:
         style "main_menu_frame"
@@ -376,6 +377,7 @@ screen main_menu():
                 style "main_menu_version"
 
 
+
 style main_menu_frame is empty
 style main_menu_vbox is vbox
 style main_menu_text is gui_text
@@ -386,7 +388,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "gui/overlay/main_menu2.png"
 
 style main_menu_vbox:
     xalign 1.0

@@ -18,7 +18,7 @@ define config.name = _("Crow_Crowd")
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
 ## Установите на False, чтобы спрятать заголовок.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Версия игры.
@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## Для отделения абзацев оставляйте между ними пустую строку.
 
 define gui.about = _p("""
+Авторы: Светлакова Ульяна, Александр Адаменко, Фионова Анжелика
 """)
 
 
@@ -62,7 +63,7 @@ define config.has_voice = True
 ## проигрываться в главном меню. Этот файл продолжит проигрываться во время
 ## игры, если не будет остановлен, или не начнёт проигрываться другой аудиофайл.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "music/michael-andrew-maclennan-prs-surveillance-instrumental.mp3"
 
 
 ## Переходы ####################################################################

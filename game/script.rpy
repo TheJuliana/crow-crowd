@@ -28,9 +28,6 @@ label start:
     # show PhilipLaugh
     # with dissolve
 
-    e "Вы создали новую игру Ren'Py."
-
-    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
 
 #label something:
 
