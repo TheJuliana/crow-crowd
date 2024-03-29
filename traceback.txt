@@ -1,15 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 361, in execute
-    $ move_animation(idle)
-  File "game/screens.rpy", line 361, in <module>
-    $ move_animation(idle)
-NameError: name 'idle' is not defined
+Exception: Could not find font 'Times New Roman.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -28,33 +20,63 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\core.py", line 2687, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\core.py", line 2687, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 361, in execute
-    $ move_animation(idle)
-  File "game/screens.rpy", line 361, in <module>
-    $ move_animation(idle)
-NameError: name 'idle' is not defined
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\core.py", line 2818, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 1121, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\behavior.py", line 968, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 1314, in render
+    xminimum = max(xminimum, size_groups[size_group].width(width, height, st, at))
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 1251, in width
+    rend = renpy.display.render.render_for_size(i, width, height, st, at)
+  File "render.pyx", line 312, in renpy.display.render.render_for_size
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\behavior.py", line 968, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\display\layout.py", line 1361, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\text\text.py", line 2276, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\text\text.py", line 676, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\text\text.py", line 268, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\text\font.py", line 745, in get_font
+    face = load_face(fn, shaper)
+  File "C:\Program Files (x86)\renpy-8.2.1-sdk\renpy\text\font.py", line 673, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'Times New Roman.ttf'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.2.24032701+nightly
 Crow_Crowd 1.0
-Fri Mar 29 19:30:54 2024
+Fri Mar 29 23:33:46 2024
