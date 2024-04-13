@@ -55,7 +55,7 @@ define config.has_voice = True
 ## Чтобы разрешить игроку тестировать громкость на звуковом или голосовом
 ## каналах, раскомментируйте строчку и настройте пример звука для прослушивания.
 
-# define config.sample_sound = "sample-sound.ogg"
+define config.sample_sound = "test_pop_sound.mp3"
 # define config.sample_voice = "sample-voice.ogg"
 
 
@@ -63,7 +63,8 @@ define config.has_voice = True
 ## проигрываться в главном меню. Этот файл продолжит проигрываться во время
 ## игры, если не будет остановлен, или не начнёт проигрываться другой аудиофайл.
 
-define config.main_menu_music = "music/michael-andrew-maclennan-prs-surveillance-instrumental.mp3"
+define config.main_menu_music = "michael-andrew-maclennan-prs-surveillance-instrumental.mp3"
+
 
 
 ## Переходы ####################################################################
