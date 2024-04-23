@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3: multiple at clauses are prohibited.
-    show text 'Warning:\n JQuartz is not responsible for any laziness that may result from using main menu generator. JQuartz is also protected from being held responsible for global warming that may result from using too much computer. Please be advised.' at Position(xpos.5, ypos=.2) at Position(xpos=.5, xanchor=.5, ypos=.5, yanchor=.5)
-                                                                                                                                                                                                                                                                                                ^
+File "game/script.rpy", line 38: expected statement.
+    "{cps=25}{font="Arial.ttf"}Утро, совсем обычное, такое же, как и много веков назад. Солнечные лучи пробиваются сквозь вдруг посеревшее небо. {p=0.5}Будет ли дождь сегодня? {p=0.5}Красивые девушки на фоне карт погоды могут ошибаться."
+                         ^
 
-Ren'Py Version: Ren'Py 8.2.2.24032701+nightly
-Sat Apr 13 18:43:50 2024
+Ren'Py Version: Ren'Py 8.2.2.24041101+nightly
+Tue Apr 23 15:26:16 2024

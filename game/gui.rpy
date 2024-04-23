@@ -41,10 +41,10 @@ define gui.hover_color = '#005bdc'
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
 ## настройки.
-define gui.selected_color = '#555555'
+define gui.selected_color = '#e2e2e2'
 
 ## Цвет, используемый текстовой кнопкой, когда она не может быть выбрана.
-define gui.insensitive_color = '#7070707f'
+define gui.insensitive_color = '#dcdcdc7f'
 
 ## Цвета, используемые для частей панелей, которые не заполняются. Они
 ## используются не напрямую, а только при воссоздании файлов изображений.
@@ -52,17 +52,17 @@ define gui.muted_color = '#a366a3'
 define gui.hover_muted_color = '#c199c1'
 
 ## Цвета, используемые в тексте диалогов и выборов.
-define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.text_color = '#e2e2e2'
+define gui.interface_text_color = '#e2e2e2'
 
 
 ## Шрифты и их размеры #########################################################
 
 ## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "Tinos-Regular.ttf"
 
 ## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Tinos-Regular.ttf"
 
 ## Шрифт, используемый текстом вне игры.
 define gui.interface_text_font = "Tinos-Regular.ttf"
@@ -92,7 +92,6 @@ define gui.title_text_size = 75
 define gui.main_menu_background = Movie(play="gui/moon_logo.webm", loop=True)
 define gui.game_menu_background = "gui/main_menu_background_color.png"
 
-
 ## Диалог ######################################################################
 ##
 ## Эти переменные контролируют, как диалог появляется на отдельной строчке.
@@ -109,7 +108,7 @@ define gui.textbox_yalign = 1.0
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
 define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_ypos = -70
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
@@ -134,7 +133,7 @@ define gui.namebox_tile = False
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
 define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_ypos = 20
 
 ## Максимальная ширина текста диалога в пикселях.
 define gui.dialogue_width = 1116

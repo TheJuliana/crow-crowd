@@ -162,6 +162,7 @@ style say_dialogue:
 
     adjust_spacing False
 
+
 ## Экран ввода #################################################################
 ##
 ## Этот экран используется, чтобы показывать renpy.input. Это параметр запроса,
@@ -360,11 +361,10 @@ screen main_menu():
     ## Эта пустая рамка затеняет главное меню.
     frame:
         style "main_menu_frame"
-
     ## Оператор use включает отображение другого экрана в данном. Актуальное
     ## содержание главного меню находится на экране навигации.
     use navigation
-
+    
     if gui.show_name:
 
         vbox:
@@ -754,6 +754,19 @@ screen preferences():
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.
+                #begin language_picker
+                ## Additional vboxes of type "radio_pref" or "check_pref" can be
+                ## added here, to add additional creator-defined preferences.
+
+            vbox:
+                style_prefix "radio"
+                label _("Language")
+
+                # Real languages should go alphabetical order by English name.
+                textbutton "Русский" text_font "DejaVuSans.ttf" action Language(None)
+                textbutton "English" text_font "DejaVuSans.ttf" action Language("english")
+
+
 
             null height (4 * gui.pref_spacing)
 

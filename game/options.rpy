@@ -40,7 +40,6 @@ define gui.about = _p("""
 
 define build.name = "Crow_Crowd"
 
-
 ## Звуки и музыка ##############################################################
 
 ## Эти три переменные управляют, среди прочего, тем, какие микшеры показываются
@@ -109,7 +108,6 @@ define config.end_game_transition = None
 ## "window hide" и "window auto".
 
 define config.window = "auto"
-
 
 ## Переходы, используемые при показе и скрытии диалогового окна
 
