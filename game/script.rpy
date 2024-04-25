@@ -2,6 +2,7 @@
 # Определение персонажей игры.
 define Philip = Character(_("Филипп Нельсон"), color="#ae56ee")
 define Bred = Character(_("Брэд Николсон"), color="#ffd5be")
+define Eleonora = Character(_("Элеонора Грей"), color="#63c8ff")
 image logo = "bg/logo.png"
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
@@ -50,14 +51,17 @@ label start:
     Philip "{cps=25}Платите по счетам...Звучит, как проклятие, как предостережение или даже строгое наставление. Если бы он только смог написать свод правил, как жить, это была бы книга толщиной в Китайскую стену"
     hide bred
     hide philip 
-    show bg ball
+    show bg prom with wiperight
+    show eleonora prom at human_right
+    Eleonora "Да...Чёрные вороны...Кружатся, кружатся в танце причудливом."
+    hide all
 
 #label something:
 
     menu:
         "Мы знакомы?":
             Philip "Нет"
-        "Как дела?":
+        "Что вы здесь делаете?":
             Philip "Хорошо"
     
 
