@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: expected statement.
-    "{cps=25}{font="Arial.ttf"}Утро, совсем обычное, такое же, как и много веков назад. Солнечные лучи пробиваются сквозь вдруг посеревшее небо. {p=0.5}Будет ли дождь сегодня? {p=0.5}Красивые девушки на фоне карт погоды могут ошибаться."
-                         ^
+File "game/script.rpy", line 90: invalid syntax
+    start_time = renpy.
 
 Ren'Py Version: Ren'Py 8.2.2.24041101+nightly
-Tue Apr 23 15:26:16 2024
+Sat May  4 15:09:47 2024
